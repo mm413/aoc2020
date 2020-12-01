@@ -1,7 +1,7 @@
 # day1 part 1
 import os
 def main():
-    file = open("C:/Users/Mark/Desktop/aoc2020/day1/part1/input.txt", "r")
+    file = open("C:/Users/Mark/Desktop/aoc2020/day1/part2/input.txt", "r")
     numbers = []
     for line in file:
         numbers.append(line.strip())
@@ -12,12 +12,11 @@ def main():
 
 def check(numbers):
     for i in range(len(numbers)):
-            # if i==0:
-            #     pass
-            if int(numbers[0]) + int(numbers[i]) == 2020:
-                print(int(numbers[0]) * int(numbers[i])
+        for j in range(len(numbers)):
+            if int(numbers[0]) + int(numbers[i]) + int(numbers[j]) == 2020:
+                print(int(numbers[0]) * int(numbers[i]) * int(numbers[j]))
                 return
-    print(len(numbers))
+
     numbers.pop(0)
     check(numbers)
     

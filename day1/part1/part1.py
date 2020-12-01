@@ -15,7 +15,7 @@ def check(numbers):
             # if i==0:
             #     pass
             if int(numbers[0]) + int(numbers[i]) == 2020:
-                print(int(numbers[0]) * int(numbers[i])
+                print(int(numbers[0]) * int(numbers[i]))
                 return
     print(len(numbers))
     numbers.pop(0)
